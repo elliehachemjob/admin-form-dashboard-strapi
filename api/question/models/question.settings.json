@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "questions",
+  "info": {
+    "name": "  Question",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "description": {
+      "type": "text",
+      "required": true,
+      "unique": true,
+      "minLength": 20,
+      "maxLength": 250
+    },
+    "reviewCount": {
+      "type": "integer",
+      "required": true
+    },
+    "categories": {
+      "collection": "category",
+      "via": "questions"
+    },
+    "Yes": {
+      "type": "integer"
+    },
+    "No": {
+      "type": "integer"
+    }
+  }
+}
