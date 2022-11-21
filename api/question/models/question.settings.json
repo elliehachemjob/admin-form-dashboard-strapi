@@ -22,10 +22,6 @@
       "type": "integer",
       "required": true
     },
-    "categories": {
-      "collection": "category",
-      "via": "questions"
-    },
     "Yes": {
       "type": "integer"
     },

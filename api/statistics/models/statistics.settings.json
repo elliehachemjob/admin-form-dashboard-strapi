@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "categories",
+  "collectionName": "statistics",
   "info": {
-    "name": "category",
+    "name": "Statistics",
     "description": ""
   },
   "options": {
@@ -11,10 +11,12 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "name": {
-      "type": "string",
-      "required": true,
-      "unique": true
+    "numbers": {
+      "type": "integer",
+      "unique": false
+    },
+    "IdNumber": {
+      "type": "string"
     }
   }
 }
