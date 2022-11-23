@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_answers",
+  "info": {
+    "name": "userAnswer",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 300
+    },
+    "phone": {
+      "type": "integer"
+    },
+    "questionID": {
+      "type": "string"
+    },
+    "question": {
+      "type": "text"
+    },
+    "answerId": {
+      "type": "string"
+    },
+    "answer": {
+      "type": "integer"
+    }
+  }
+}
