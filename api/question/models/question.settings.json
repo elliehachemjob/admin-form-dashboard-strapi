@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "questions",
+  "collectionName": "oldQuestions",
   "info": {
-    "name": "  oldQuestion ",
+    "name": "  oldQuestion",
     "description": ""
   },
   "options": {

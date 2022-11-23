@@ -1,6 +1,6 @@
 {
   "kind": "collectionType",
-  "collectionName": "categories",
+  "collectionName": "oldCategories",
   "info": {
     "name": "oldCategory",
     "description": ""
