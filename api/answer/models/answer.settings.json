@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "answers",
+  "info": {
+    "name": "answer",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Answer": {
+      "type": "string"
+    },
+    "correctFlag": {
+      "type": "integer"
+    }
+  }
+}

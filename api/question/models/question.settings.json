@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "questions",
+  "info": {
+    "name": "question"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "question": {
+      "type": "text",
+      "unique": true,
+      "required": true,
+      "maxLength": 300,
+      "minLength": 50
+    }
+  }
+}
