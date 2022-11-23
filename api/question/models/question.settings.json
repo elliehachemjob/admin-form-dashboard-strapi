@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "questions",
   "info": {
-    "name": "  Question",
+    "name": "  oldQuestion ",
     "description": ""
   },
   "options": {

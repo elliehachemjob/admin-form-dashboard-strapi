@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "statistics",
   "info": {
-    "name": "Statistics",
+    "name": "oldStatistic",
     "description": ""
   },
   "options": {
