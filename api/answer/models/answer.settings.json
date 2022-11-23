@@ -16,6 +16,9 @@
     },
     "correctFlag": {
       "type": "integer"
+    },
+    "questionID": {
+      "type": "string"
     }
   }
 }
