@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * export-statistics.js controller
+ * Export Statistics.js controller
  *
- * @description: A set of functions called "actions" of the `export-statistics` plugin.
+ * @description: A set of functions called "actions" of the `Export Statistics` plugin.
  */
 
 module.exports = {

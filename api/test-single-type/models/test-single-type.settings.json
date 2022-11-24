@@ -1,6 +1,6 @@
 {
   "kind": "singleType",
-  "collectionName": "test_single_types",
+  "collectionName": "test_single_type",
   "info": {
     "name": "testSingleType"
   },

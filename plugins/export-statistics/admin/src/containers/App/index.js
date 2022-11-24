@@ -1,9 +1,9 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import { saveAs } from "file-saver";
 
-import {fetchAll, getModels} from "../../utils/contentApis";
-import {convertToCSV} from "../../utils/csvHelper";
-import "./style.css"
+import { fetchAll, getModels } from "../../utils/contentApis";
+import { convertToCSV } from "../../utils/csvHelper";
+import "./style.css";
 
 const App = () => {
 
@@ -18,14 +18,17 @@ const App = () => {
   }, []);
 
   const download = async (collectionName, apiID) => {
-    const data = await fetchAll(collectionName)
+    collectionName = collectionName.replaceAll("_", "-");
+    const data = await fetchAll(collectionName);
     if (data) {
       const current = new Date();
-      const filename = `${apiID}-${current.getTime()}`
+      const filename = `${apiID}-${current.getTime()}`;
       const file = new File([convertToCSV.convert(data)], `${filename}.csv`, { type: "text/csv;charset=utf-8" });
       saveAs(file);
     }
-  }
+
+
+  };
 
   return (
     <div className="container export">

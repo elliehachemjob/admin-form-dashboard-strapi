@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "description": "This is the description of the plugin.",
   "strapi": {
-    "name": "export-statistics",
+    "name": "Export Statistics",
     "icon": "plug",
-    "description": "Description of export-statistics plugin."
+    "description": "Description of Export Statistics plugin."
   },
   "dependencies": {},
   "author": {

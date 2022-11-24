@@ -1,3 +1,3 @@
-# Strapi plugin export-statistics
+# Strapi plugin Export Statistics
 
-A quick description of export-statistics.
+A quick description of Export Statistics.
