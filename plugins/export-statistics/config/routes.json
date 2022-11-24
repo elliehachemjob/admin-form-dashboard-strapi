@@ -1,0 +1,12 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/",
+      "handler": "export-statistics.index",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
