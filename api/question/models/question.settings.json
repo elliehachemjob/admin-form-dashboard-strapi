@@ -2,8 +2,7 @@
   "kind": "collectionType",
   "collectionName": "questions",
   "info": {
-    "name": "  Question",
-    "description": ""
+    "name": "question"
   },
   "options": {
     "increments": true,
@@ -11,22 +10,12 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "description": {
+    "question": {
       "type": "text",
-      "required": true,
       "unique": true,
-      "minLength": 20,
-      "maxLength": 250
-    },
-    "reviewCount": {
-      "type": "integer",
-      "required": true
-    },
-    "Yes": {
-      "type": "integer"
-    },
-    "No": {
-      "type": "integer"
+      "required": true,
+      "maxLength": 300,
+      "minLength": 50
     }
   }
 }

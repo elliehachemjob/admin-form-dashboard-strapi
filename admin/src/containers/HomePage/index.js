@@ -10,6 +10,7 @@ import { get, upperFirst } from 'lodash';
 import { auth, LoadingIndicatorPage } from 'strapi-helper-plugin';
 import PageTitle from '../../components/PageTitle';
 import { useModels } from '../../hooks';
+import { Redirect } from 'react-router-dom';
 
 import useFetch from './hooks';
 import { ALink, Block, Container, LinkWrapper, P, Wave, Separator } from './components';
@@ -58,6 +59,8 @@ const SOCIAL_LINKS = [
 ];
 
 const HomePage = ({ global: { plugins }, history: { push } }) => {
+
+
   const { error, isLoading, posts } = useFetch();
   // Temporary until we develop the menu API
   const { collectionTypes, singleTypes, isLoading: isLoadingForModels } = useModels();
@@ -88,27 +91,27 @@ const HomePage = ({ global: { plugins }, history: { push } }) => {
   const username = get(auth.getUserInfo(), 'username', '');
   const linkProps = hasAlreadyCreatedContentTypes
     ? {
-        id: 'app.components.HomePage.button.blog',
-        href: 'https://strapi.io/blog/',
-        onClick: () => {},
-        type: 'blog',
-        target: '_blank',
-      }
+      id: 'app.components.HomePage.button.blog',
+      href: 'https://strapi.io/blog/',
+      onClick: () => { },
+      type: 'blog',
+      target: '_blank',
+    }
     : {
-        id: 'app.components.HomePage.create',
-        href: '',
-        onClick: handleClick,
-        type: 'documentation',
-      };
+      id: 'app.components.HomePage.create',
+      href: '',
+      onClick: handleClick,
+      type: 'documentation',
+    };
+
+
+
+
 
   return (
-    <>
-      <FormattedMessage id="HomePage.helmet.title">
-        {title => <PageTitle title={title} />}
-      </FormattedMessage>
-      <Container className="container-fluid">
-          </Container>
-    </>
+
+    <Redirect to="plugins/content-manager/collectionType/application::answer.answer" />
+
   );
 };
 

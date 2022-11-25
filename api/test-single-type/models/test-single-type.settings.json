@@ -1,0 +1,17 @@
+{
+  "kind": "singleType",
+  "collectionName": "test_single_type",
+  "info": {
+    "name": "testSingleType"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "singleType": {
+      "type": "string"
+    }
+  }
+}
