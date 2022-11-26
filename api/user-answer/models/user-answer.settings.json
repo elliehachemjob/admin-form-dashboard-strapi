@@ -22,7 +22,7 @@
     "questionID": {
       "type": "string"
     },
-    "question": {
+    "QuestionAR": {
       "type": "text"
     },
     "answerId": {
@@ -30,6 +30,9 @@
     },
     "answer": {
       "type": "integer"
+    },
+    "QuestionEN": {
+      "type": "text"
     }
   }
 }

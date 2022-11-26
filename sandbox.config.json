@@ -3,7 +3,7 @@
   "hardReloadOnChange": false,
   "view": "terminal",
   "container": {
-    "port": 8080,
+    "port": 1337,
     "startScript": "develop"
   }
 }

@@ -11,13 +11,16 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "Answer": {
+    "AnswerEN": {
       "type": "string"
     },
     "correctFlag": {
       "type": "integer"
     },
     "questionID": {
+      "type": "string"
+    },
+    "AnswerAR": {
       "type": "string"
     }
   }
