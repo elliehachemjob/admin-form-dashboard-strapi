@@ -11,7 +11,7 @@
   },
   "devDependencies": {},
   "dependencies": {
-    "file-saver": "^2.0.5",
+    "file-saver": "2.0.5",
     "strapi": "3.2.3",
     "strapi-admin": "3.2.3",
     "strapi-connector-mongoose": "3.2.3",
