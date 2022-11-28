@@ -35,6 +35,12 @@
   "Role": "قاعدة",
   "Username": "اسم المستخدم",
   "Users": "المستخدمين",
+  "Answers": "الإجابات",
+  "Questions": "الأسئلة",
+  "UserAnswers": "إجابات المستخدم",
+  "Settings": "إعدادات",
+  "Content Type Builder": "منشئ أنواع المحتوى",
+  "Export Statistics": "إحصاءات التصدير",
   "Users & Permissions": "المستخدمين والصلاحيات",
   "app.components.BlockLink.code": "امثلة للشفرة",
   "app.components.BlockLink.code.content": "تعلم من خلال اختبار مشاريع حقيقية طورت من المجتمع.",
@@ -142,5 +148,7 @@
   "components.popUpWarning.title": "ارجو التأكيد",
   "notification.error": "حدث خطأ",
   "notification.error.layout": "تعذّر استرداد التنسيق",
-  "request.error.model.unknown": "هذا النموذج غير موجود"
+  "request.error.model.unknown": "هذا النموذج غير موجود",
+  "app.components.LeftMenuLinkContainer.settings": "إعدادات",
+  "app.components.LeftMenuLinkContainer.upload": "مكتبة الوسائط"
 }

@@ -54,7 +54,6 @@
   "HomePage.welcome.congrats": "Congrats!",
   "HomePage.welcome.congrats.content": "You are logged as the first administrator. To discover the powerful features provided by Strapi,",
   "HomePage.welcome.congrats.content.bold": "we recommend you to create your first Collection-Type.",
-  "Media Library": "Media Library",
   "New entry": "New entry",
   "Password": "Password",
   "Provider": "Provider",
@@ -144,6 +143,10 @@
   "Settings.webhooks.value": "Value",
   "Username": "Username",
   "Users": "Users",
+  "Answers": "Answers",
+  "Questions": "Questions",
+  "UserAnswers": "UserAnswers",
+  "Settings": "Settings",
   "Users & Permissions": "Users & Permissions",
   "Users.components.List.empty": "There is no users...",
   "Users.components.List.empty.withFilters": "There is no users with the applied filters...",
@@ -192,6 +195,7 @@
   "app.components.LeftMenuLinkContainer.noPluginsInstalled": "No plugins installed yet",
   "app.components.LeftMenuLinkContainer.plugins": "Plugins",
   "app.components.LeftMenuLinkContainer.settings": "Settings",
+  "app.components.LeftMenuLinkContainer.content-type-builder": "test",
   "app.components.LeftMenuLinkContainer.singleTypes": "Single Types",
   "app.components.ListPluginsPage.deletePlugin.description": "It might take a few seconds to uninstall the plugin.",
   "app.components.ListPluginsPage.deletePlugin.title": "Uninstalling",
@@ -333,5 +337,6 @@
   "notification.permission.not-allowed-read": "You are not allowed to see this document",
   "notification.success.delete": "The item has been deleted",
   "notification.success.saved": "Saved",
-  "request.error.model.unknown": "This model doesn't exist"
+  "request.error.model.unknown": "This model doesn't exist",
+  "app.components.LeftMenuLinkContainer.upload": "Media Library"
 }
