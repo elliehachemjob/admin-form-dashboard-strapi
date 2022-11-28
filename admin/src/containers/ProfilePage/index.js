@@ -29,6 +29,8 @@ const ProfilePage = () => {
   const userInfos = auth.getUserInfo();
   const headerLabel = userInfos.username || `${userInfos.firstname} ${userInfos.lastname}`;
 
+  window.document.title = "Ras Al Khaimah";
+
   return (
     <>
       <BackHeader onClick={goBack} />

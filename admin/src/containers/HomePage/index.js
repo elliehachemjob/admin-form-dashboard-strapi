@@ -105,6 +105,7 @@ const HomePage = ({ global: { plugins }, history: { push } }) => {
     };
 
 
+  window.document.title = "Ras Al Khaimah";
 
 
 

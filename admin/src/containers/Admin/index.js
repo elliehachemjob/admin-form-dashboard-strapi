@@ -201,6 +201,8 @@ export class Admin extends React.Component {
       return <LoadingIndicatorPage />;
     }
 
+    window.document.title = "Ras Al Khaimah";
+
     return (
       <GlobalContextProvider
         autoReload={autoReload}

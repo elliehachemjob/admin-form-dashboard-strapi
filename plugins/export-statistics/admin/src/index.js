@@ -47,6 +47,8 @@ export default strapi => {
       ],
     },
   };
+  window.document.title = "Ras Al Khaimah";
+
 
   return strapi.registerPlugin(plugin);
 };

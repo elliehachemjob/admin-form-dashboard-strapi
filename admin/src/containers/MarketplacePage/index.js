@@ -47,6 +47,9 @@ const MarketPlacePage = () => {
     }
   };
 
+  window.document.title = "Ras Al Khaimah";
+
+
   return (
     <div>
       <PageTitle

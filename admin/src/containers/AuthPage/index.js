@@ -279,6 +279,9 @@ const AuthPage = ({ hasAdmin }) => {
     return <Redirect to="/" />;
   }
 
+  window.document.title = "Ras Al Khaimah";
+
+
   return (
     <>
       <Padded bottom size="md">

@@ -15,6 +15,8 @@ import { NotFound } from 'strapi-helper-plugin';
 
 const NotFoundPage = props => <NotFound {...props} />;
 
+window.document.title = "Ras Al Khaimah";
+
 NotFoundPage.propTypes = {
   history: PropTypes.shape({
     goBack: PropTypes.func.isRequired,

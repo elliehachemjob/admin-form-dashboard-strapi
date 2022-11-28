@@ -16,6 +16,7 @@ import { selectLocale } from './selectors';
 
 // eslint-disable-next-line react/prefer-stateless-function
 export class LanguageProvider extends React.Component {
+
   render() {
     const messages = defaultsDeep(this.props.messages[this.props.locale], this.props.messages.en);
 

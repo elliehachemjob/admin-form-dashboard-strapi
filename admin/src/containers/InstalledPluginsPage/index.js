@@ -34,6 +34,8 @@ const InstalledPluginsPage = () => {
 
   const rows = generateRows(plugins, onConfirm);
 
+  window.document.title = "Ras Al Khaimah";
+
   return (
     <div>
       <PageTitle

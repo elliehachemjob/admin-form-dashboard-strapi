@@ -7,9 +7,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+window.document.title = "Ras Al Khaimah";
+
 class ErrorBoundary extends React.Component {
   // eslint-disable-line react/prefer-stateless-function
   state = { error: null, errorInfo: null };
+
+
 
   componentDidCatch(error, errorInfo) {
     this.setState({
