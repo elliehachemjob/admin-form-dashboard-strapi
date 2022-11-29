@@ -15,6 +15,7 @@
     "strapi": "3.2.3",
     "strapi-admin": "3.2.3",
     "strapi-connector-mongoose": "3.2.3",
+    "strapi-middleware-cache": "^2.1.8",
     "strapi-plugin-content-manager": "3.2.3",
     "strapi-plugin-content-type-builder": "3.2.3",
     "strapi-plugin-users-permissions": "3.2.3"
