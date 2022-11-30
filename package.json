@@ -7,6 +7,7 @@
     "develop": "strapi develop –max-old-space-size=8082",
     "start": "strapi start –max-old-space-size=8082",
     "build": "strapi build",
+    "build-run": "strapi build && strapi develop –max-old-space-size=8082 ",
     "strapi": "strapi"
   },
   "devDependencies": {},
