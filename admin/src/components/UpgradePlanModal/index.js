@@ -43,7 +43,7 @@ const UpgradePlanModal = ({ isOpen, onToggle }) => {
             </Text>
           </Padded>
           <Padded top size="md">
-            <Button color="primary" onClick={handleClick} style={{ paddingRight: 0 }}>
+            <Button aria-label="primary button" color="primary" onClick={handleClick} style={{ paddingRight: 0 }}>
               {formatMessage({ id: 'app.components.UpgradePlanModal.button' })}
               <Download />
             </Button>
@@ -65,7 +65,7 @@ const UpgradePlanModal = ({ isOpen, onToggle }) => {
 
 UpgradePlanModal.defaultProps = {
   isOpen: false,
-  onToggle: () => {},
+  onToggle: () => { },
 };
 
 UpgradePlanModal.propTypes = {

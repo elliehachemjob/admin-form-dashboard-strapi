@@ -31,7 +31,8 @@ export class LocaleToggle extends React.Component {
 
     return (
       <Wrapper>
-        <ButtonDropdown isOpen={this.state.isOpen} toggle={this.toggle}>
+        <ButtonDropdown aria-label="dropdown button"
+          isOpen={this.state.isOpen} toggle={this.toggle}>
           <DropdownToggle className="localeDropdownContent">
             <span>{languageNativeNames[locale]}</span>
           </DropdownToggle>

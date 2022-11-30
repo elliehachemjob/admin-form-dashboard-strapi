@@ -37,7 +37,8 @@ const ForgotPassword = ({ formErrors, modifiedData, onChange, onSubmit }) => {
                 />
                 <BaselineAlignment top size="3px" />
                 <Padded top>
-                  <Button type="submit" color="primary" textTransform="uppercase">
+                  <Button aria-label="submit button"
+                    type="submit" color="primary" textTransform="uppercase">
                     {formatMessage({ id: 'Auth.form.button.forgot-password' })}
                   </Button>
                 </Padded>

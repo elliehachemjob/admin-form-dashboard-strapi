@@ -132,6 +132,8 @@ const RoleListPage = () => {
         {!resultsCount && !isLoading && <EmptyRole />}
         <ListButton>
           <Button
+                                  aria-label="add button"
+
             onClick={handleToggleModalForCreatingRole}
             icon={<Plus fill="#007eff" width="11px" height="11px" />}
             label={formatMessage({

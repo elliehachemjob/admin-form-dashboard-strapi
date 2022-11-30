@@ -113,6 +113,8 @@ class PluginCard extends React.Component {
             <div className="cardFooterButton">
               <CheckPermissions permissions={adminPermissions.marketplace.install}>
                 <Button
+                                        aria-label="download plugin button"
+
                   className={`${buttonClass} button`}
                   label={buttonLabel}
                   type="button"

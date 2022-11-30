@@ -77,10 +77,12 @@ const ModalForm = ({ isOpen, onClosed, onToggle }) => {
       )}
       <ModalFooter>
         <section>
-          <Button type="button" color="cancel" onClick={onToggle}>
+          <Button aria-label="submit button"
+            type="button" color="cancel" onClick={onToggle}>
             {formatMessage({ id: 'app.components.Button.cancel' })}
           </Button>
-          <Button color="success" type="button" onClick={handleClick} isLoading={isSubmiting}>
+          <Button aria-label="success button"
+            color="success" type="button" onClick={handleClick} isLoading={isSubmiting}>
             {formatMessage({ id: buttonSubmitLabel })}
           </Button>
         </section>
@@ -90,7 +92,7 @@ const ModalForm = ({ isOpen, onClosed, onToggle }) => {
 };
 
 ModalForm.defaultProps = {
-  onClosed: () => {},
+  onClosed: () => { },
 };
 
 ModalForm.propTypes = {

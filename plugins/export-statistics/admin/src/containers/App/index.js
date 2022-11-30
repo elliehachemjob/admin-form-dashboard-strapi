@@ -46,7 +46,7 @@ const App = () => {
           <div className="model-table row mt-3" key={model.uid}>
             <div className="col-8  p-4 row-title">{model.schema.name}</div>
             <div className="col-4  p-4 text-right">
-              <button onClick={() => download(model.schema.collectionName, model.apiID)} type="button" className="btn btn-primary">Download</button>
+              <button aria-label="primary button" onClick={() => download(model.schema.collectionName, model.apiID)} type="button" className="btn btn-primary">Download</button>
             </div>
           </div>
         ))

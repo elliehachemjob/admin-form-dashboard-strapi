@@ -10,7 +10,7 @@ const ButtonWithNumber = ({ number, onClick }) => {
   const { formatMessage } = useIntl();
 
   return (
-    <Button disabled color="primary" onClick={onClick}>
+    <Button aria-label="primary button" disabled color="primary" onClick={onClick}>
       <Flex style={{ minWidth: '17rem' }} justifyContent="space-between" alignItems="center">
         <FontAwesomeIcon icon="users" />
         <Padded left size="sm" />

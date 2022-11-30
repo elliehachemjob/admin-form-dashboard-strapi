@@ -68,7 +68,7 @@ function ListView() {
     icon: <Plus fill="#007eff" width="11px" height="11px" />,
     Component: props => {
       if (canCreate) {
-        return <Button {...props} />;
+        return <Button   aria-label="fill button" {...props} />;
       }
 
       return null;
@@ -286,7 +286,7 @@ function ListView() {
           ) : (
             <EmptyList />
           )}
-          <ListButton>{canCreate && <Button {...omit(newButtonProps, 'Component')} />}</ListButton>
+          <ListButton>{canCreate && <Button aria-label="can create button" {...omit(newButtonProps, 'Component')} />}</ListButton>
         </div>
       )}
       <PopUpWarning

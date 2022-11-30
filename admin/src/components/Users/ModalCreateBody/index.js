@@ -139,7 +139,7 @@ const ModalCreateBody = forwardRef(
             </Padded>
           </Wrapper>
         </ModalSection>
-        <button type="submit" style={{ display: 'none' }} ref={buttonSubmitRef}>
+        <button aria-label="submit button" type="submit" style={{ display: 'none' }} ref={buttonSubmitRef}>
           hidden button to use the native form event
         </button>
       </form>

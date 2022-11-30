@@ -935,6 +935,8 @@ exports[`<Inputs /> should match the snapshot if type is headers 1`] = `
             className="c5"
             onClick={[Function]}
             type="button"
+                        aria-label="c5 button"
+
           />
         </div>
       </li>
@@ -942,6 +944,8 @@ exports[`<Inputs /> should match the snapshot if type is headers 1`] = `
     <button
       onClick={[Function]}
       type="button"
+                              aria-label="c5 button"
+
     >
       <svg
         fill="#007eff"

@@ -51,7 +51,7 @@ const Wrapper = styled.div`
       display: inline-block;
       vertical-align: top;
       width: 50%;
-      font-family: Lato;
+      font-family: Segoe UI;
       font-weight: bold;
       font-size: 11px;
       color: #5c5f66;

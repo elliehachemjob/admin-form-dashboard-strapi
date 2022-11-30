@@ -115,7 +115,7 @@ const HeadersInput = ({ errors, name, onClick, onChange, onRemove, value }) => {
           );
         })}
       </ul>
-      <button onClick={() => onClick(name)} type="button">
+      <button  aria-label="create button" onClick={() => onClick(name)} type="button">
         <Plus fill="#007eff" width="10px" />
         <FormattedMessage
           id="Settings.webhooks.create.header"

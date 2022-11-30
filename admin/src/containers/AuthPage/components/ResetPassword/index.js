@@ -44,7 +44,8 @@ const ResetPassword = ({ formErrors, modifiedData, onChange, onSubmit, requestEr
               />
               <BaselineAlignment top size="3px" />
               <Padded top>
-                <Button type="submit" color="primary" textTransform="uppercase">
+                <Button aria-label="submit button"
+                  type="submit" color="primary" textTransform="uppercase">
                   {formatMessage({ id: 'Auth.form.button.reset-password' })}
                 </Button>
               </Padded>

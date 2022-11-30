@@ -128,7 +128,8 @@ const Register = ({
                 />
               </Flex>
               <Padded top size="md">
-                <Button type="submit" color="primary" textTransform="uppercase">
+                <Button aria-label="primary button"
+                  type="submit" color="primary" textTransform="uppercase">
                   {formatMessage({ id: 'Auth.form.button.register' })}
                 </Button>
               </Padded>

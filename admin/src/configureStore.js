@@ -2,11 +2,11 @@
  * Create the store with dynamic reducers
  */
 
-import { createStore, applyMiddleware, compose } from 'redux';
-import { fromJS } from 'immutable';
+import { createStore, applyMiddleware, compose } from "redux";
+import { fromJS } from "immutable";
 // import { routerMiddleware } from 'react-router-redux';
-import createSagaMiddleware from 'redux-saga';
-import createReducer from './reducers';
+import createSagaMiddleware from "redux-saga";
+import createReducer from "./reducers";
 
 const sagaMiddleware = createSagaMiddleware();
 
@@ -21,14 +21,14 @@ export default function configureStore(initialState = {}) {
   // If Redux DevTools Extension is installed use it, otherwise use Redux compose
   /* eslint-disable no-underscore-dangle */
   const composeEnhancers =
-    process.env.NODE_ENV !== 'production' &&
-    typeof window === 'object' &&
-    window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
+    process.env.NODE_ENV !== "production" &&
+      typeof window === "object" &&
+      window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__
       ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({
         // TODO Try to remove when `react-router-redux` is out of beta, LOCATION_CHANGE should not be fired more than once after hot reloading
         // Prevent recomputing reducers for `replaceReducer`
         shouldHotReload: false,
-        name: 'Strapi - Dashboard',
+        name: "Strapi - Dashboard",
       })
       : compose;
   /* eslint-enable */
@@ -36,7 +36,7 @@ export default function configureStore(initialState = {}) {
   const store = createStore(
     createReducer(),
     fromJS(initialState),
-    composeEnhancers(...enhancers),
+    composeEnhancers(...enhancers)
   );
 
   // Extensions
@@ -47,7 +47,7 @@ export default function configureStore(initialState = {}) {
   // Make reducers hot reloadable, see http://mxs.is/googmo
   /* istanbul ignore next */
   if (module.hot) {
-    module.hot.accept('./reducers', () => {
+    module.hot.accept("./reducers", () => {
       store.replaceReducer(createReducer(store.injectedReducers));
     });
   }

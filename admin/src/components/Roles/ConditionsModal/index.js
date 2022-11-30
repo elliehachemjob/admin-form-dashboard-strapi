@@ -55,11 +55,11 @@ const ConditionsModal = ({ isOpen, onToggle, actions, onClosed, initialCondition
       </Padded>
       <ModalFooter>
         <section>
-          <Button type="button" color="cancel" onClick={onToggle}>
+          <Button aria-label="cancel button" type="button" color="cancel" onClick={onToggle}>
             {formatMessage({ id: 'app.components.Button.cancel' })}
           </Button>
 
-          <Button type="button" color="success" onClick={handleSubmit}>
+          <Button aria-label="success button" type="button" color="success" onClick={handleSubmit}>
             {formatMessage({
               id: 'Settings.permissions.conditions.apply',
             })}

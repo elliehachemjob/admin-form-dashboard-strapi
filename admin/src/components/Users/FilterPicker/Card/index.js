@@ -73,7 +73,7 @@ const Card = ({ onChange }) => {
           ]}
         />
       </Padded>
-      <Button icon onClick={handleSubmit} type="button">
+      <Button aria-label="filter button" icon onClick={handleSubmit} type="button">
         <FormattedMessage id="app.utils.add-filter" />
       </Button>
     </Wrapper>
@@ -81,7 +81,7 @@ const Card = ({ onChange }) => {
 };
 
 Card.defaultProps = {
-  onChange: () => {},
+  onChange: () => { },
 };
 
 Card.propTypes = {

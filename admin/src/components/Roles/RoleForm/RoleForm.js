@@ -16,6 +16,7 @@ const RoleForm = ({ disabled, role, values, errors, onChange, onBlur, isLoading 
       number={role.usersCount}
       onClick={() => console.log('Open user modal')}
       key="user-button"
+      aria-label="key user button"
     >
       {formatMessage({
         id: 'Settings.roles.form.button.users-with-role',
@@ -33,19 +34,19 @@ const RoleForm = ({ disabled, role, values, errors, onChange, onBlur, isLoading 
         role
           ? role.name
           : formatMessage({
-              id: 'Settings.roles.form.title',
-              defaultMessage: 'Details',
-            })
+            id: 'Settings.roles.form.title',
+            defaultMessage: 'Details',
+          })
       }
       subtitle={
         role
           ? role.description
           : formatMessage({
-              id: 'Settings.roles.form.description',
-              defaultMessage: 'Name and description of the role',
-            })
+            id: 'Settings.roles.form.description',
+            defaultMessage: 'Name and description of the role',
+          })
       }
-      /* eslint-enable indent */
+    /* eslint-enable indent */
     >
       <NameInput
         disabled={disabled}

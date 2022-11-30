@@ -31,7 +31,8 @@ const Header = ({
             label: formatMessage({ id: 'app.utils.delete' }),
             onClick: onClickDelete,
             type: 'button',
-            Component: props => (canDelete ? <Button {...props} /> : null),
+            Component: props => (canDelete ? <Button                          aria-label="button"
+            {...props} /> : null),
           },
 
           {
@@ -40,7 +41,8 @@ const Header = ({
             label: formatMessage({ id: 'Settings.permissions.users.create' }),
             onClick: onClickAddUser,
             type: 'button',
-            Component: props => (canCreate ? <Button {...props} /> : null),
+            Component: props => (canCreate ? <Button                         aria-label="c5 button"
+             {...props} /> : null),
           },
         ],
     content: canRead

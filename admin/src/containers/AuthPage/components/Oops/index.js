@@ -50,7 +50,8 @@ const Oops = () => {
               </Padded>
             </Padded>
             <Padded top size="md">
-              <Button type="button" color="primary" textTransform="uppercase" onClick={handleClick}>
+              <Button                         aria-label="primary button"
+  type="button" color="primary" textTransform="uppercase" onClick={handleClick}>
                 {formatMessage({ id: 'Auth.link.signin' })}
               </Button>
             </Padded>

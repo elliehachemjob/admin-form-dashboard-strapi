@@ -33,10 +33,12 @@ const TriggerContainer = ({ isPending, onCancel, response }) => {
                   </p>
                 </td>
                 <td>
-                  <button onClick={onCancel} type="button">
+                  <button aria-label="remove button"
+                    onClick={onCancel} type="button">
                     <FormattedMessage
                       id="Settings.webhooks.trigger.cancel"
                       defaultMessage="cancel"
+
                     />
                     <Remove fill="#b4b6ba" />
                   </button>
@@ -90,7 +92,7 @@ const TriggerContainer = ({ isPending, onCancel, response }) => {
 
 TriggerContainer.defaultProps = {
   isPending: false,
-  onCancel: () => {},
+  onCancel: () => { },
   response: {},
 };
 

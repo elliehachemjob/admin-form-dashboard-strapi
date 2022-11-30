@@ -34,7 +34,8 @@ const Logout = ({ history: { push } }) => {
 
   return (
     <Wrapper>
-      <ButtonDropdown isOpen={isOpen} toggle={toggle}>
+      <ButtonDropdown isOpen={isOpen} toggle={toggle} aria-label="dropdown button"
+      >
         <DropdownToggle>
           {displayName}
           <FontAwesomeIcon icon="caret-down" />

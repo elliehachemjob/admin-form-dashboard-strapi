@@ -58,6 +58,8 @@ const ForgotPasswordSuccess = () => {
 
               <Padded top size="md">
                 <Button
+                  aria-label="primary button"
+
                   type="button"
                   color="primary"
                   textTransform="uppercase"

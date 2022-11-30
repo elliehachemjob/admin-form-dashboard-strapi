@@ -121,7 +121,10 @@ const OnboardingVideos = () => {
         <StaticLinks />
       </div>
       <div className="openBtn">
-        <button onClick={handleClick} className={isOpen ? 'active' : ''} type="button">
+        <button
+                                aria-label="open button"
+
+        onClick={handleClick} className={isOpen ? 'active' : ''} type="button">
           <FontAwesomeIcon icon={faQuestion} />
           <FontAwesomeIcon icon={faTimes} />
           <span />
