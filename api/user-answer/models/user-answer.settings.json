@@ -14,32 +14,25 @@
     "Name": {
       "type": "string",
       "minLength": 2,
-      "maxLength": 300,
-      "private": true
+      "maxLength": 300
     },
     "phone": {
-      "type": "integer",
-      "private": true
+      "type": "integer"
     },
     "questionID": {
-      "type": "string",
-      "private": true
+      "type": "string"
     },
     "QuestionAR": {
-      "type": "text",
-      "private": true
+      "type": "text"
     },
     "answerId": {
-      "type": "string",
-      "private": true
+      "type": "string"
     },
     "answer": {
-      "type": "integer",
-      "private": true
+      "type": "integer"
     },
     "QuestionEN": {
-      "type": "text",
-      "private": true
+      "type": "text"
     }
   }
 }

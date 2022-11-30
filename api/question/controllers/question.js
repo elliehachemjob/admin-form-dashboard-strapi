@@ -8,17 +8,6 @@
 module.exports = {
 
 
- count(ctx) {
- },
-
- async update(ctx) {
- },
-
- async delete(ctx) {
- }
- ,
- async create(ctx) {
- }
 
 
 };
