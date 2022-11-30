@@ -4,8 +4,8 @@
   "version": "0.1.0",
   "description": "Simple standard implmentation of strapi hedless CMS / API in a sanbox.",
   "scripts": {
-    "develop": "strapi develop",
-    "start": "strapi start",
+    "develop": "strapi develop –max-old-space-size=8082",
+    "start": "strapi start –max-old-space-size=8082",
     "build": "strapi build",
     "strapi": "strapi"
   },
