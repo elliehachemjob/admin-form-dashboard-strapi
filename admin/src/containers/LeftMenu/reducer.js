@@ -8,20 +8,6 @@ const initialState = {
   collectionTypesSectionLinks: [],
   generalSectionLinks: [
     {
-      icon: 'list',
-      label: 'app.components.LeftMenuLinkContainer.listPlugins',
-      destination: '/list-plugins',
-      isDisplayed: false,
-      permissions: adminPermissions.marketplace.main,
-    },
-    {
-      icon: 'shopping-basket',
-      label: 'app.components.LeftMenuLinkContainer.installNewPlugin',
-      destination: '/marketplace',
-      isDisplayed: false,
-      permissions: adminPermissions.marketplace.main,
-    },
-    {
       icon: 'cog',
       label: 'app.components.LeftMenuLinkContainer.settings',
       isDisplayed: false,
