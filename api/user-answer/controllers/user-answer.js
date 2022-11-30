@@ -5,4 +5,16 @@
  * to customize this controller
  */
 
-module.exports = {};
+module.exports = {
+
+ count(ctx) {
+ },
+
+ async update(ctx) {
+ },
+
+ async delete(ctx) {
+ },
+ async findOne(ctx) {
+ }
+};
