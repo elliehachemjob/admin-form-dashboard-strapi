@@ -10,7 +10,7 @@ import { Redirect } from "react-router-dom";
 
 const HomePage = ({ global: { plugins }, history: { push } }) => {
   return (
-    <Redirect to="plugins/content-manager/collectionType/application::answer.answer" />
+    <Redirect to="/" />
   );
 };
 
